@@ -1,0 +1,66 @@
+.header {
+    min-height: 108px;
+    position: relative;
+    background: #00AFE9;
+    padding-bottom: 15px;
+    // nav {
+    //     position: fixed;
+    //     top: 0;
+    // }
+    nav, &__wrapper, &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__wrapper {
+        margin-top: 20px;
+    }
+    &__logo {
+        width: 150px;
+        margin-top: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        min-width: 110px;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 0 16px;
+            a {
+                font-family: 'Arsenal', sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__phone {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        margin-left: 50px;
+        a {
+            font-family: 'Arsenal', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            color: #FFFFFF;
+        }
+        &_icon {
+            position: absolute;
+            top: 5px;
+            left: -27px;
+            height: 18px;
+        }   
+    }
+    &__card {
+        margin-left: 40px;
+    }
+}

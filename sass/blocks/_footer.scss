@@ -1,0 +1,47 @@
+.footer {
+    position: relative;
+    padding: 100px 0 42px 0;
+    background: #00AFE9;
+    &_product {
+        max-height: 168px;
+        padding: 31px 0 35px 0;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &__logo {
+        img {
+            width: 155px;
+        }
+    }
+    &__document {
+        font-family: 'Arsenal', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__link {
+        font-family: 'Arsenal', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #FFFFFF;
+        &:hover {
+            color: #FFFFFF;
+        }  
+    }
+}

@@ -1,0 +1,33 @@
+.advantage {
+    position: absolute;
+    top: -54px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1140px;    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 108px;
+        background: #FFFFFF;
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 49px;
+    }
+    &__item {
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon {
+        width: 52px;
+    }
+    &__descr {
+        font-family: 'Arsenal', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+        margin-left: 23px;
+    }
+}

@@ -1,0 +1,67 @@
+.about {
+    position: relative;
+    padding: 45px 0 125px 0;
+    min-height: auto;
+    &__header {
+        font-family: 'Marmelad', sans-serif;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 57px;
+        text-align: center;
+        color: #000000;
+    }
+    &__subheader {
+        font-family: 'Arsenal', sans-serif;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+        margin-top: 15px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        max-width: 350px;
+    }
+    &__decor, &__decor_1 {
+        font-family: 'Marmelad', sans-serif;
+        font-weight: normal;
+        font-size: 96px;
+        line-height: 114px;
+        color: rgba(0, 104, 250, 0.38);
+        position: absolute;
+        top: -75px;
+        left: 10px;
+        &_1 {
+            right: 10px;
+            left:auto;            
+        }
+    }
+    &__descr {
+        font-family: 'Arsenal', sans-serif;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        margin-top: 115px;
+        &_right {
+            margin-left: 10px;
+            text-align: right;
+        }
+        &_mt {
+            margin-top: 87px;
+        }
+    }
+    &__drop {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: 155px;
+        left: 0;
+        right: 0;
+    }
+}

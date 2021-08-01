@@ -1,0 +1,52 @@
+.product {
+    position: relative;
+    padding: 105px 0 135px 0;
+    &__title {
+        font-family: 'Marmelad', sans-serif;
+        font-weight: normal;
+        font-size: 55px;
+        line-height: 66px;
+        color: #000000;
+    }
+    &__subtitle {
+        font-family: 'Marmelad', sans-serif;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+        color: #000000;
+    }
+    &__decor {
+        position: absolute;
+        top: 150px;
+        left: 220px;
+        max-width: 105px;
+    }
+    &__descr {
+        font-family: 'Arsenal', sans-serif;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 165%;
+        color: #000000;
+        margin-top: 36px;
+        max-width: 633px;
+        &_extention {
+            max-width: 1040px;
+            margin-top: 20px;
+            font-family: 'Arsenal', sans-serif;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 165%;
+            color: #000000;
+            &_mt_54{
+                margin-top: 54px;
+            }
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        max-width: 600px;
+        z-index: -1;
+    }
+}

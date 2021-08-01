@@ -1,0 +1,30 @@
+.generators {
+    position: absolute;
+    top: -54px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1140px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 108px;
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 49px;
+        background: #ECF5FD;
+        // filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__item {
+        width: calc(100%/4);
+    }
+    &__descr {
+        font-family: 'Arsenal', sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 45px;
+        color: #000000;
+        text-align: center;
+    }
+}

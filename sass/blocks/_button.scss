@@ -1,0 +1,78 @@
+.button {
+    position: relative;
+    z-index: 20;
+    display: block;
+    width: 236px;
+    height: 53px;
+    background: #FFFFFF;
+    box-shadow: 2px 9px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 31px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 106px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    overflow: hidden;
+    &::after{
+        content: "";
+        background: #fff;
+        display: block;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -5%;
+        border-radius: 50px;
+        margin-left: -30%;
+        opacity: 0;
+        transition: all 0.75s ease-in-out;
+    }
+    &:active::after{
+        width: 0px;
+        opacity: 1;
+        transition: 0s;
+    }
+    &:focus {
+        outline: none;
+    }
+    &_sale {
+        background: #00AFE9;
+        box-shadow: 2px 9px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 31px;
+        color: #FFFFFF;
+        margin-top: 73px;
+    }
+    &_catalog {
+        width: 136px;
+        height: 36px;
+        background: #00AFE9;
+        box-shadow: 2px 9px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 31px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 17px;
+    }
+    &_about {
+        margin-top: 63px;
+        background: #00AFE9;
+        color: #FFFFFF;
+    }
+    &_product {
+        margin: 0;
+        margin-top: 81px;
+        background: #00AFE9;
+        color: #FFFFFF; 
+    }
+    &_form {
+        margin: 0;
+        margin-top: 31px;
+        background: #00AFE9;
+        color: #FFFFFF; 
+    }
+}

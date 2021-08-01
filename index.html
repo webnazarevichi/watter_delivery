@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class='preloader__item preloader__item_1'></div>
+            <div class='preloader__item preloader__item_2'></div>
+            <div class='preloader__item preloader__item_3'></div>
+            <div class='preloader__item preloader__item_4'></div>
+            <div class='preloader__item preloader__item_5'></div>
+            <div class='preloader__item preloader__item_6'></div>
+            <div class='preloader__item preloader__item_7'></div>
+            <div class='preloader__item preloader__item_8'></div>
+            <div class='preloader__item preloader__item_9'></div>
+            <div class='preloader__item preloader__item_10'></div>
+            <div class='preloader__item preloader__item_11'></div>
+            <div class='preloader__item preloader__item_12'></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <div class="header__logo">
+                    <a href="#"><img src="icons/лого.png" alt="logo"></a>
+                </div>
+                <div class="header__wrapper">
+                    <div class="header__item">
+                        <ul class="header__menu">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Наш партнёр</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__item">
+                        <div class="header__phone">
+                            <a href="https://wa.me/89263616447" target="_blank"><img src="icons/whatsapp.svg" alt="whatsapp" class="header__phone_icon"></a>
+                            <a href="tel:89263616447">8 926 361 64 47</a>
+                            <a href="tel:84956485259">8 495 648 52 59</a>
+                            <a href="tel:89267427253">8 926 742 72 53</a>
+                        </div>
+                        <div class="header__card">
+                            <a href="#"><img src="icons/корзина.png" alt="card"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__wrapper">
+                <div class="promo__image_wrapper"></div>
+                <img class="promo__image" src="img/H2O.png" alt="H2O">
+            <div class="promo__header">
+                <h1 class="title">Доставка воды по Одинцово и Одинцовскому району</h1>
+                <h2 class="subtitle">Доставляем вкусную воду с 2007 года</h2>
+                <button class="button" onclick="document.location='#catalog'">В каталог</button>
+            </div>
+            </div>
+            
+        </div>
+        <!-- <div class="canvas__wrapper">
+            <canvas></canvas>
+        </div> -->
+    </section>
+    <section class="sale">
+        <div class="advantage">
+            <div class="advantage__wrapper">
+                <div class="advantage__item">
+                    <div class="advantage__icon">
+                        <img src="icons/лучшая цена.png" alt="like">
+                    </div>
+                    <div class="advantage__descr">Лучшая цена</div>
+                </div>
+                <div class="advantage__item">
+                    <div class="advantage__icon">
+                        <img src="icons/быстрая доставка.png" alt="icon">
+                    </div>
+                    <div class="advantage__descr">Быстрая доставка</div>
+                </div>
+                <div class="advantage__item">
+                    <div class="advantage__icon">
+                        <img src="icons/высокое качество.png" alt="icon">
+                    </div>
+                    <div class="advantage__descr">Высокое качество</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sale__carousel">
+                <div>
+                    <div class="sale__wrapper">
+                        <div class="sale__item">
+                            <div class="sale__header">Акция</div>
+                            <div class="sale__subheader">“Бонусная бутыль”</div>
+                            <div class="sale__descr">* условия уточняйте у оператора</div>
+                            <button data-modal="consultation" class="button button_sale">Заказать звонок</button>
+                        </div>
+                        <div class="sale__img"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="sale__wrapper">
+                        <div class="sale__item">
+                            <div class="sale__header">Акция</div>
+                            <div class="sale__subheader">“Помпа в подарок”</div>
+                            <div class="sale__descr">
+                                для новых клиентов<br>
+                                * условия уточняйте у оператора
+                            </div>
+                            <button data-modal="consultation" class="button button_sale">Заказать звонок</button>
+                        </div>
+                        <div class="sale__img sale__img_2"></div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <img src="img/волны.png" alt="decor" class="sale__decor">
+    </section>
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <h2 class="catalog__title">Ассортимент нашей продукции</h2>
+            <div class="catalog__wrapper">
+                <div class="catalog__item">
+                    <div class="catalog__cart">
+                        <img src="img/1.jpg" alt="Кубай" class="catalog__img">
+                        <div class="catalog__product">Кубай</div>
+                        <div class="catalog__cost">300 р.-</div>
+                        <div class="catalog__details"><a href="#">Подробнее...</a></div>
+                        <button class="button button_catalog">в корзину</button>
+                    </div>
+                    <img src="img/листик.png" alt="Листик" class="catalog__decor">
+                    <img src="img/листик.png" alt="Листик" class="catalog__decor_1">
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__cart">
+                        <img src="img/2.jpg" alt="Пилигрим" class="catalog__img">
+                        <div class="catalog__product">Пилигрим</div>
+                        <div class="catalog__cost">320 р.-</div>
+                        <div class="catalog__details"><a href="#">Подробнее...</a></div>
+                        <button class="button button_catalog">в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__cart">
+                        <img src="img/3.jpg" alt="Покров" class="catalog__img">
+                        <div class="catalog__product">Покров</div>
+                        <div class="catalog__cost">185 р.-</div>
+                        <div class="catalog__details"><a href="#">Подробнее...</a></div>
+                        <button class="button button_catalog">в корзину</button>
+                    </div>
+                    <img src="img/листик.png" alt="Листик" class="catalog__decor_2">
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__cart">
+                        <img src="img/4.jpg" alt="Архыз" class="catalog__img">
+                        <div class="catalog__product">Архыз</div>
+                        <div class="catalog__cost">410 р.-</div>
+                        <div class="catalog__details"><a href="#">Подробнее...</a></div>
+                        <button class="button button_catalog">в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__cart">
+                        <img src="img/5.jpg" alt="Губернская" class="catalog__img">
+                        <div class="catalog__product">Губернская</div>
+                        <div class="catalog__cost">200 р.-</div>
+                        <div class="catalog__details"><a href="#">Подробнее...</a></div>
+                        <button class="button button_catalog">в корзину</button>
+                    </div>
+                    <img src="img/листик.png" alt="Листик" class="catalog__decor_3">
+                    <img src="img/листик.png" alt="Листик" class="catalog__decor_4">
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__cart">
+                        <img src="img/6.jpg" alt="Архызик" class="catalog__img">
+                        <div class="catalog__product">Архызик</div>
+                        <div class="catalog__cost">400 р.-</div>
+                        <div class="catalog__details"><a href="#">Подробнее...</a></div>
+                        <button class="button button_catalog">в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2 class="about__header">Несколько фактов о нашей компании</h2>
+            <div class="about__subheader">которая дорожит отношениями с каждым своим клиентом</div>
+            <div class="about__wrapper">
+                <div class="about__half">
+                    <div class="about__item">
+                        <div class="about__decor">01</div>
+                        <div class="about__descr">
+                            Компания Акваэкспрес существует
+                            более 15 лет на рынке
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__decor">02</div>
+                        <div class="about__descr">
+                            Выполняем доставку воды как
+                            именитых компаний,так и 
+                            собственного производства
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__decor">03</div>
+                        <div class="about__descr">
+                            С радостью доставляем 
+                            воду более,чем 2000 клиентам
+                        </div>
+                    </div>
+                </div>
+                <div class="about__half">
+                    <div class="about__item">
+                        <div class="about__decor_1">04</div>
+                        <div class="about__descr about__descr_right">
+                            Наши цены всегда доступны
+                            для каждого клиента
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__decor_1">05</div>
+                        <div class="about__descr about__descr_right">
+                            Наша компания стремится
+                            сделать воду доступной для
+                            каждого в г. Одинцово
+                            и Одинцовском районе
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__decor_1">06</div>
+                        <div class="about__descr about__descr_mt about__descr_right">
+                            Наша вода обладает 
+                            отменным качеством
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <img class="about__drop" src="img/капля.png" alt="Капля">
+            <button class="button button_about" onclick="document.location='#catalog'">вернуться к каталогу</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="generators">
+            <div class="generators__wrapper">
+                <div class="generators__item">
+                    <div class="generators__descr">Пилигрим</div>
+                </div>
+                <div class="generators__item">
+                    <div class="generators__descr">Покров</div>
+                </div>
+                <div class="generators__item">
+                    <div class="generators__descr">Губернская</div>
+                </div>
+                <div class="generators__item">
+                    <div class="generators__descr">Кубай</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <a href="#"><img src="icons/лого.png" alt="logo"></a>
+                        <div class="footer__document">ИНН: 503509361263</div>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:89267427253" class="footer__link">8 926 742 72 53</a>
+                    <a href="tel:84956485259" class="footer__link">8 495 648 52 59</a>
+                    <a href="tel:84956485259" class="footer__link">8 495 648 52 59</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&#10006;</div>
+            <div class="modal__subtitle">Для заказа звонка 
+                заполните форму!</div>
+            <form action="#" class="modal__form">
+                <input type="text" name="name" required placeholder="Имя">
+                <input type="number" name="phone" required placeholder="Номер телефона">
+                <input type="email" name="email" required placeholder="E-mail">
+                <label class="modal__descr"><input type="checkbox" required>Я соглашаюсь на передачу
+                    персональных данных согласно
+                    политике конфиденциальности</label>
+                <button class="button button_form">заказать звонок</button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close modal__close_white">&#10006;</div>
+            <div class="modal__subtitle modal__subtitle_mb0">Наш оператор в скором времени свяжется с Вами!</div>
+        </div>
+    </div>
+    <div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bubble.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
