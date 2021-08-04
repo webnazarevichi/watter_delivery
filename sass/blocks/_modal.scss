@@ -14,8 +14,9 @@
     transform: translate(-50%, -50%);
     width: 600px;
     height: auto;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 40px 15px;
+    border-radius: 10px;
     &__close {
         position: absolute;
         color: red;

@@ -31,6 +31,7 @@
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 19px;
+        overflow: hidden;
     }
     &__decor {
         position: absolute;
@@ -95,4 +96,37 @@
             color: #727379; 
         }
     }
+}
+
+@media screen and (max-width: 1200px){
+    .catalog{
+        padding: 61px 0 184px 0;
+        &__wrapper {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 19px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    .catalog{
+        &__title {
+            font-size: 37px;
+            line-height: 49px;
+        }
+    }
+}
+
+
+
+@media screen and(max-width: 767px){
+
+}
+
+
+
+@media screen and(max-width: 575px){
+
 }

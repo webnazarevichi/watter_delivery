@@ -60,3 +60,47 @@ $(document).ready(function(){
 
     
   });
+
+
+
+// Add active class to hamburger
+  window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.header__menu'),
+    menuItem = document.querySelectorAll('.menu_item'),
+    hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('header__menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('header__menu_active');
+        })
+    });
+});
+
+
+
+//Circle menu
+document.addEventListener('DOMContentLoaded', () => {
+	const revealerNav = window.revealer({
+	  revealElementSelector: '.nav-js',
+	  options: {
+		anchorSelector: '.nav-btn-js',
+	  },
+	});
+  
+	const actionBtn = document.querySelector('.nav-btn-js');
+	actionBtn.addEventListener('click', () => {
+	  if (!revealerNav.isRevealed()) {
+		revealerNav.reveal();
+		actionBtn.setAttribute('data-open', true);
+	  } else {
+		revealerNav.hide();
+		actionBtn.setAttribute('data-open', false);
+	  }
+	});
+  });

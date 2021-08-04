@@ -72,3 +72,100 @@
         bottom: -25px;
     }
 }
+
+@media screen and (max-width: 1200px){
+    .sale {
+        min-height: 678px;
+        padding: 79px 0 26px 0;
+        &__carousel {
+            .slick-prev, .slick-next {
+                top: 50%;
+                transform: translateY(-50%);
+                left:0;
+            }
+            .slick-next {
+                left:auto;
+                right: 0;
+            }
+        }
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            width: 350px;
+            margin-top: 110px;
+            margin-left: 100px;
+        }
+        &__header {
+            font-size: 48px;
+            line-height: 57px;
+        }
+        &__subheader {
+            font-size: 35px;
+            line-height: 43px;
+            margin-top: 5px;
+        }
+        &__descr {
+            font-size: 20px;
+            line-height: 28px;
+            margin-top: 25px;
+            margin-left: 15px;
+        }
+        &__img {
+            width: 503px;
+            height: 507px;
+            background: url('../img/бутыль.png') center (center/cover) no-repeat;
+            &_2 {
+                background: url('../img/помпа.png') center (center/cover) no-repeat;
+            }
+        }
+        &__decor {
+            margin: 0 auto;
+            height: 80px;
+            width: 100%;
+            right: 0;
+            left: 0;
+            bottom: -25px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .sale{
+        padding: 26px 0 26px 0;
+        &__header {
+            font-size: 38px;
+            line-height: 47px;
+        }
+        &__subheader {
+            font-size: 27px;
+            line-height: 40px;
+            text-align: left;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 28px;
+        }
+        &__img {
+            width: 503px;
+            height: 507px;
+            background: url('../img/бутыль.png') center (center/cover) no-repeat;
+            &_2 {
+                background: url('../img/помпа.png') center (center/cover) no-repeat;
+            }
+        }
+    }
+}
+
+
+
+@media screen and(max-width: 767px){
+
+}
+
+
+
+@media screen and(max-width: 575px){
+
+}

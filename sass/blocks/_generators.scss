@@ -28,3 +28,52 @@
         text-align: center;
     }
 }
+
+
+@media screen and (max-width: 1200px){
+    .generators {
+        width: 890px;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            height: 108px;
+            border-radius: 49px;
+        }
+        &__item {
+            width: calc(100%/4);
+        }
+        &__descr {
+            font-size: 36px;
+            line-height: 45px;
+        }
+    } 
+}
+
+
+
+@media screen and (max-width: 991px){
+    .generators {
+        width: 700px;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            height: 87px;
+            border-radius: 49px;
+        }
+        &__item {
+            width: calc(100%/4);
+        }
+        &__descr {
+            font-size: 27px;
+            line-height: 36px;
+        }
+    } 
+}
+
+
+
+@media screen and(max-width: 767px){
+    .generators{
+        display: none;
+    }
+}
