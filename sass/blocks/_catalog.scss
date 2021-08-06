@@ -67,7 +67,6 @@
     &__img {
         display: block;
         margin: 0 auto;
-        // width: 270px;
         height: 310px;
     }
     &__product, &__cost {
@@ -116,6 +115,27 @@
             font-size: 37px;
             line-height: 49px;
         }
+        &__item {
+            width: auto;
+            height: auto;
+        }
+        &__cart {
+            position: relative;
+            z-index: 20;
+            width: 300px;
+            height: 430px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 19px;
+            overflow: hidden;
+        }
+        &__img {
+            height: 220px;
+        }
+        &__product, &__cost {
+            font-size: 24px;
+            line-height: 34px;
+        }
     }
 }
 
@@ -128,5 +148,32 @@
 
 
 @media screen and(max-width: 575px){
-
+    .catalog{
+        &__cart {
+            position: relative;
+            width: 260px;
+            height: 382px;
+        }
+        &__img {
+            height: 190px;
+        }
+        &__product {
+            margin-top: 20px;
+        }
+        &__decor {
+            display: none;
+            &_1 {
+                display: none;
+            }
+            &_2 {
+                display: none;
+            }
+            &_3 {
+                display: none;
+            }
+            &_4 {
+                display: none;
+            }
+        }
+    }
 }

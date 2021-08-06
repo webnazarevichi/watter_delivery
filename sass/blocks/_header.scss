@@ -20,6 +20,9 @@
     }
     &__wrapper {
         margin-top: 20px;
+        &_hidden{
+            display: none;
+        }
     }
     &__logo {
         width: 150px;

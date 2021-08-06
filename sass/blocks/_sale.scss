@@ -1,7 +1,7 @@
 .sale {
     position: relative;
     background: url('../img/sale_bg.jpg') center (center/cover) no-repeat;
-    min-height: 678px;
+    min-height: auto;
     padding: 79px 0 26px 0;
     &__carousel {
         .slick-prev, .slick-next {
@@ -26,6 +26,9 @@
         width: 350px;
         margin-top: 110px;
         margin-left: 100px;
+        &_mt{
+            margin-top: 105px;
+        }
     }
     &__header {
         font-family: 'Marmelad', sans-serif;
@@ -55,7 +58,7 @@
     }
     &__img {
         width: 503px;
-        height: 507px;
+        height: 450px;
         background: url('../img/бутыль.png') center (center/cover) no-repeat;
         &_2 {
             background: url('../img/помпа.png') center (center/cover) no-repeat;
@@ -75,7 +78,7 @@
 
 @media screen and (max-width: 1200px){
     .sale {
-        min-height: 678px;
+        min-height: auto;
         padding: 79px 0 26px 0;
         &__carousel {
             .slick-prev, .slick-next {
@@ -91,11 +94,6 @@
         &__wrapper {
             display: flex;
             justify-content: space-between;
-        }
-        &__item {
-            width: 350px;
-            margin-top: 110px;
-            margin-left: 100px;
         }
         &__header {
             font-size: 48px;
@@ -114,7 +112,7 @@
         }
         &__img {
             width: 503px;
-            height: 507px;
+            height: 450px;
             background: url('../img/бутыль.png') center (center/cover) no-repeat;
             &_2 {
                 background: url('../img/помпа.png') center (center/cover) no-repeat;
@@ -133,10 +131,18 @@
 
 @media screen and (max-width: 991px){
     .sale{
-        padding: 26px 0 26px 0;
+        padding: 20px 0 65px 0;
         &__header {
             font-size: 38px;
             line-height: 47px;
+        }
+        &__item{
+            width: 245px;
+            margin-top: 100px;
+            margin-left: 60px;
+            &_mt{
+                margin-top: 95px;
+            }
         }
         &__subheader {
             font-size: 27px;
@@ -148,8 +154,8 @@
             line-height: 28px;
         }
         &__img {
-            width: 503px;
-            height: 507px;
+            width: 375px;
+            height: 400px;
             background: url('../img/бутыль.png') center (center/cover) no-repeat;
             &_2 {
                 background: url('../img/помпа.png') center (center/cover) no-repeat;
@@ -161,11 +167,89 @@
 
 
 @media screen and(max-width: 767px){
-
+    .sale{
+        &__item{
+            margin-left: 5%;
+            &_mt{
+                margin-top: 85px;
+            }
+        }
+        &__subheader {
+            font-size: 21px;
+            text-align: center;
+        }
+        &__descr {
+            font-size: 13px;
+            line-height: 22px;
+        }
+        &__carousel {
+            .slick-dots{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 10;
+            }
+            .slick-dots li{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin: 0 10px;
+            }
+            .slick-dots button{
+                margin: 0;
+                padding: 0;
+                border:none;
+                font-size: 0;
+                width: 15px;
+                height: 15px;
+                background-color: #00AFE9;
+                border-radius: 50%;
+            }
+            .slick-dots li.slick-active button{
+                background-color: transparent;
+                border: solid 2px #00AFE9;
+            }
+        }
+    }
 }
 
 
 
 @media screen and(max-width: 575px){
-
+    .sale {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__item {
+            margin-top: 25px;
+            &_mt{
+                margin-top: 25px;
+            }
+        }
+        &__subheader {
+            font-size: 26px;
+            line-height: 36px;
+        }
+        &__descr {
+            font-size: 13px;
+            line-height: 22px;
+            margin-top: 16px;
+            margin-left: 0;
+            text-align: center;
+        }
+        &__img {
+            position: relative;
+            top: -50px;
+            width: 320px;
+            height: 350px;
+            &_2{
+                top: -20px;
+            }
+        }
+       
+    }
 }
