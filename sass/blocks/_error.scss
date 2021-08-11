@@ -1,0 +1,124 @@
+.error{
+    position: relative;
+    background: #00AFE9;
+    min-height:400px;
+    overflow: hidden;
+    padding: 60px 0;
+    &__wrapper{
+        display: block;
+        margin: 0 auto;
+    } 
+    &__title{
+        text-align: center;
+        font-family: 'Marmelad', sans-serif;
+        color: white;
+        font-size: 220px;
+    } 
+    &__subtitle{
+        text-align: center;
+        font-family: 'Marmelad', sans-serif;
+        color: white;
+        font-size: 40px;
+    } 
+    &__btn{
+        position: relative;
+        display: block;
+        border: none;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px 40px;
+        width: 250px;
+        background-color: white;
+        border-radius: 30px;
+        color: black;
+        text-align: center;
+        font-family: 'Arsenal', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: background-color 0.1s;
+        z-index: 11;
+        &:hover{
+            text-decoration: none;
+            color: black;
+            background-color: #f2f2f2;
+        }
+    }
+    .cloud {
+        width: 350px; height: 120px;
+        background: linear-gradient(to left top, #FFF);
+        border-radius: 100px;
+        position: absolute;
+        margin: 120px auto 20px;
+        z-index:10;
+        transition: ease 1s;
+    }
+
+    .cloud:after, .cloud:before {
+        content: '';
+        position: absolute;
+        background: #FFF;
+        z-index: 1;
+    }
+
+    .cloud:after {
+        width: 100px; height: 100px;
+        top: -50px; left: 50px;
+        border-radius: 100px;
+    }
+
+    .cloud:before {
+        width: 180px; height: 180px;
+        top: -90px; right: 50px;
+        border-radius: 200px;
+    }
+    
+    .x1 {
+        top:-50px;
+        left:100px;
+        transform: scale(0.3);
+        opacity: 0.9;
+        animation: moveclouds 15s linear infinite;
+    }
+    
+    .x1_5{
+        top:-80px;
+        left:250px;
+        transform: scale(0.3);
+        animation: moveclouds 17s linear infinite; 
+    }
+
+    .x2 {
+        left: 250px;
+        top:30px;
+        transform: scale(0.6);
+        opacity: 0.6; 
+        animation: moveclouds 25s linear infinite;
+    }
+
+    .x3 {
+        left: 250px; bottom: -70px;
+        transform: scale(0.6);
+        opacity: 0.8; 
+        animation: moveclouds 25s linear infinite;
+    }
+
+    .x4 {
+        left: 470px; bottom: 20px;
+        transform: scale(0.75);
+        opacity: 0.75;
+        animation: moveclouds 18s linear infinite;
+    }
+
+    .x5 {
+        left: 200px; top: 300px;
+        transform: scale(0.5);
+        opacity: 0.8; 
+        animation: moveclouds 20s linear infinite;
+    }
+    @keyframes moveclouds {
+        0% {margin-left: 1000px;}
+        100% {margin-left: -1000px;}
+    } 
+}

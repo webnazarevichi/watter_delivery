@@ -85,7 +85,8 @@
     &__details {
         font-family: 'Arsenal', sans-serif;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 15px;
+        padding: 5px;
         line-height: 16px;
         font-variant: small-caps;
         color: #727379;
@@ -149,16 +150,12 @@
 
 @media screen and(max-width: 575px){
     .catalog{
+        &__title {
+            font-size: 31px;
+            line-height: 42px;
+        }
         &__cart {
-            position: relative;
-            width: 260px;
-            height: 382px;
-        }
-        &__img {
-            height: 190px;
-        }
-        &__product {
-            margin-top: 20px;
+            width: 280px;
         }
         &__decor {
             display: none;

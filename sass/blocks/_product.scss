@@ -1,6 +1,7 @@
 .product {
     position: relative;
     padding: 105px 0 135px 0;
+    overflow: hidden;
     &__title {
         font-family: 'Marmelad', sans-serif;
         font-weight: normal;
@@ -10,16 +11,21 @@
     }
     &__subtitle {
         font-family: 'Marmelad', sans-serif;
+        position: relative;
         font-weight: normal;
         font-size: 36px;
         line-height: 43px;
         color: #000000;
-    }
-    &__decor {
-        position: absolute;
-        top: 150px;
-        left: 220px;
-        max-width: 105px;
+        &::after{
+            content: '';
+            background-image: url('../img/листик.png');
+            position: absolute;
+            background-size: cover;
+            width: 105px;
+            height: 100px;
+            top: -35px;
+            left: 87px;
+        }
     }
     &__descr {
         font-family: 'Arsenal', sans-serif;
@@ -37,10 +43,16 @@
             font-size: 24px;
             line-height: 165%;
             color: #000000;
+            span{
+                font-weight: 700;
+            }
             &_mt_54{
                 margin-top: 54px;
             }
         }
+    }
+    &__collapse{
+        display: none;
     }
     &__img {
         position: absolute;
@@ -48,5 +60,91 @@
         right: 20px;
         max-width: 600px;
         z-index: -1;
+    }
+}
+
+
+@media screen and(max-width: 575px) {
+    .product {
+        padding: 75% 0 75px 0;
+        &__title {
+            font-size: 34px;
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 27px;
+            text-align: center;
+            margin: 0 auto;
+            width: 210px;
+            &::after{
+                content: '';
+                background-image: url('../img/листик.png');
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                top: -15px;
+                left: auto;
+                right: 15px;
+            }
+        }
+        &__descr {
+            font-size: 18px;
+            line-height: 165%;
+            color: #000000;
+            margin-top: 36px;
+            max-width: 633px;
+            &_extention {
+                display: none;
+                max-width: 1040px;
+                font-size: 18px;
+                &_active{
+                    display: block;
+                }
+                &_mt_54{
+                    margin-top: 54px;
+                }
+            }
+        }
+        &__collapse{
+            display: block;
+            button{
+                border: none;
+                outline: none;
+                padding: 0;
+                margin: 0;
+                background-color: transparent;
+                color: #00AFE9;
+            }
+            &_active{
+                display: none;
+            }
+        }
+        &__img {
+            position: absolute;
+            top: 15px;
+            right: 0;
+            left: 0;
+            display: block;
+            margin: 0 auto;
+            max-width: 75%;
+            &_1{
+                transform: rotate(-15deg);
+            }
+            &_2{
+                transform: rotate(-17deg);
+            }
+            &_3{
+                transform: rotate(-16deg);
+            }
+            &_4{
+                transform: rotate(-21deg);
+            }
+            &_5{
+                transform: rotate(-20deg);
+            }
+            &_6{
+                transform: rotate(-17.5deg);
+            }
+        }
     }
 }

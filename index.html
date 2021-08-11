@@ -50,7 +50,7 @@
                             <a href="tel:89267427253">8 926 742 72 53</a>
                         </div>
                         <div class="header__card">
-                            <a href="#"><img src="icons/корзина.png" alt="card"></a>
+                            <div class="label-place"></div>
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                         <div class="catalog__product">Кубай</div>
                         <div class="catalog__cost">300 р.-</div>
                         <div class="catalog__details"><a href="#">Подробнее...</a></div>
-                        <button class="button button_catalog">в корзину</button>
+                        <button class="button button_catalog add_item" data-id="1" data-title="Кубай" data-price="300" data-img="img/1.jpg" data-count="100500">в корзину</button>
                     </div>
                     <img src="img/листик.png" alt="Листик" class="catalog__decor">
                     <img src="img/листик.png" alt="Листик" class="catalog__decor_1">
@@ -186,7 +186,7 @@
                         <div class="catalog__product">Пилигрим</div>
                         <div class="catalog__cost">320 р.-</div>
                         <div class="catalog__details"><a href="#">Подробнее...</a></div>
-                        <button class="button button_catalog">в корзину</button>
+                        <button class="button button_catalog add_item" data-id="2" data-title="Пилигрим" data-price="320" data-img="img/2.jpg">в корзину</button>
                     </div>
                 </div>
                 <div class="catalog__item">
@@ -195,7 +195,7 @@
                         <div class="catalog__product">Покров</div>
                         <div class="catalog__cost">185 р.-</div>
                         <div class="catalog__details"><a href="#">Подробнее...</a></div>
-                        <button class="button button_catalog">в корзину</button>
+                        <button class="button button_catalog add_item" data-id="3" data-title="Покров" data-price="185" data-img="img/3.jpg">в корзину</button>
                     </div>
                     <img src="img/листик.png" alt="Листик" class="catalog__decor_2">
                 </div>
@@ -204,8 +204,8 @@
                         <img src="img/4.jpg" alt="Архыз" class="catalog__img">
                         <div class="catalog__product">Архыз</div>
                         <div class="catalog__cost">410 р.-</div>
-                        <div class="catalog__details"><a href="#">Подробнее...</a></div>
-                        <button class="button button_catalog">в корзину</button>
+                        <div class="catalog__details"><a href="page.html">Подробнее...</a></div>
+                        <button class="button button_catalog add_item" data-id="4" data-title="Архыз" data-price="410" data-img="img/4.jpg">в корзину</button>
                     </div>
                 </div>
                 <div class="catalog__item">
@@ -214,7 +214,7 @@
                         <div class="catalog__product">Губернская</div>
                         <div class="catalog__cost">200 р.-</div>
                         <div class="catalog__details"><a href="#">Подробнее...</a></div>
-                        <button class="button button_catalog">в корзину</button>
+                        <button class="button button_catalog add_item" data-id="5" data-title="Губернская" data-price="200" data-img="img/5.jpg">в корзину</button>
                     </div>
                     <img src="img/листик.png" alt="Листик" class="catalog__decor_3">
                     <img src="img/листик.png" alt="Листик" class="catalog__decor_4">
@@ -225,7 +225,7 @@
                         <div class="catalog__product">Архызик</div>
                         <div class="catalog__cost">400 р.-</div>
                         <div class="catalog__details"><a href="#">Подробнее...</a></div>
-                        <button class="button button_catalog">в корзину</button>
+                        <button class="button button_catalog add_item" data-id="6" data-title="Архызик" data-price="400" data-img="img/6.jpg">в корзину</button>
                     </div>
                 </div>
             </div>
@@ -329,9 +329,18 @@
             <div class="modal__subtitle">Для заказа звонка 
                 заполните форму!</div>
             <form action="#" class="modal__form">
-                <input type="text" name="name" required placeholder="Имя">
-                <input type="number" name="phone" required placeholder="Номер телефона">
-                <input type="email" name="email" required placeholder="E-mail">
+                <div class="modal__animate">
+                    <input type="text" name="name" required>
+                    <label>Имя</label>
+                </div>
+                <div class="modal__animate">
+                    <input type="number" name="phone" required>
+                    <label>Номер телефона</label>
+                </div>
+                <div class="modal__animate">
+                    <input type="email" name="email" required>
+                    <label>E-mail</label>
+                </div>
                 <label class="modal__descr"><input type="checkbox" required>Я соглашаюсь на передачу
                     персональных данных согласно
                     политике конфиденциальности</label>

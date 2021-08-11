@@ -2,11 +2,6 @@
     min-height: 108px;
     position: relative;
     background: #00AFE9;
-    padding-bottom: 15px;
-    // nav {
-    //     position: fixed;
-    //     top: 0;
-    // }
     nav, &__wrapper, &__item {
         display: flex;
         justify-content: space-between;
@@ -44,7 +39,7 @@
             a {
                 font-family: 'Arsenal', sans-serif;
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 20px;
                 color: #FFFFFF;
             }

@@ -3,8 +3,8 @@
     padding: 100px 0 42px 0;
     background: #00AFE9;
     &_product {
-        max-height: 168px;
-        padding: 31px 0 35px 0;
+        max-height: auto;
+        padding: 45px 0;
     }
     &__wrapper {
         display: flex;
@@ -43,5 +43,62 @@
         &:hover {
             color: #FFFFFF;
         }  
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .footer {
+        padding: 45px 20px;
+        &_product {
+            padding: 45px 20px;
+        }
+        &__link {
+            font-family: 'Arsenal', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            text-decoration: none;
+            color: #FFFFFF;
+            &:hover {
+                color: #FFFFFF;
+            }  
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+    .footer {
+        padding: 20px 0 40px 0;
+        &_product {
+            padding: 20px 0 40px 0;
+        }
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__logo {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__document {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+        &__contacts {
+            margin-top: 20px;
+        }
+        &__link {
+            font-size: 20px;
+            margin-top: 10px;
+
+            &:hover {
+                color: #FFFFFF;
+            }  
+        }
     }
 }

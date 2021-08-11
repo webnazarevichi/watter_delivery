@@ -1,44 +1,23 @@
 // Preloader
 
 $(window).on('load', function() {
-  $('.preloader').delay(500).fadeOut('slow');
+    $('.preloader').delay(500).fadeOut('slow');
 });
 
 
-// Slick slider
-$(document).ready(function(){
-    $('.sale__carousel').slick({
-      prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
-      speed: 1200,
-	  responsive: [
-		{
-			breakpoint: 767,
-			settings: {
-				dots: true,
-				arrows: false
-			}
-		}
-	  ]
-    //   autoplay: true,
-    //   autoplaySpeed: 3000
-    });
 
-    // Modal form
-    $('[data-modal=consultation]').on('click', function(){
-      $('.overlay, #consultation').fadeIn('slow');
-    });
-    $('.modal__close').on('click', function(){
-      $('.overlay, #consultation, #thanks').fadeOut('slow');
-    });
-	$('.overlay').click(function(e) {
-		if ($(e.target).closest('.modal').length == 0) {
-			$(this).fadeOut();					
-		}
+
+$(document).ready(function(){
+    //Add class hamburger "active"
+	$('.hamburger').click(function(){
+		$('.hamburger').toggleClass('hamburger_active');
 	});
 
-    // Modal submit
-
+	//Add class "active" text collapse
+	$('.product__collapse').click(function(){
+		$('.product__collapse').toggleClass('product__collapse_active');
+		$('.product__descr_extention').toggleClass('product__descr_extention_active');
+	});
 
     //Scroll back to top
     var progressPath = document.querySelector('.progress-wrap path');
@@ -71,13 +50,10 @@ $(document).ready(function(){
 			return false;
 		});
 
-	
-	//Add class hamburger "active"
-	$('.hamburger').click(function(){
-		$('.hamburger').toggleClass('hamburger_active');
-	});
-    
 });
+
+
+
 // Cart functions
 $(function(){
 	'use strict'; 
