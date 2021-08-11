@@ -43,12 +43,12 @@
         }
     }
     &_catalog {
-        width: 136px;
-        height: 36px;
+        width: 180px;
+        height: 43px;
         background: #00AFE9;
         border-radius: 31px;
         font-weight: normal;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 15px;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -111,17 +111,6 @@
     }
 }
 
-@media screen and(max-width: 767px){
-    .button{
-        &_about {
-            font-size: 14px;
-            width: 200px;
-            height: 50px;
-        }
-    }
-}
-
-
 @media screen and(max-width: 575px){
     .button{
         &_sale {
@@ -132,16 +121,16 @@
                 box-shadow: 2px 9px 6px rgba(0, 0, 0, 0.25);
                 border-radius: 31px;
                 color: #FFFFFF;
-                width: 180px;
-                height: 44px;
-                font-size: 14px;
+                width: 236px;
+                height: 53px;
+                font-size: 16px;
                 margin: 10px 0 30px 0;
             }
         }
         &_form {
-            width: 200px;
-            height: 40px;
-            font-size: 14px;
+            width: 236px;
+            height: 53px;
+            font-size: 16px;
         }
     }
 }

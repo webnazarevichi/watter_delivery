@@ -38,7 +38,7 @@ $(document).ready(function(){
 	});
 
     // Modal submit
-
+	
 
     //Scroll back to top
     var progressPath = document.querySelector('.progress-wrap path');
@@ -75,6 +75,11 @@ $(document).ready(function(){
 	//Add class hamburger "active"
 	$('.hamburger').click(function(){
 		$('.hamburger').toggleClass('hamburger_active');
+		//No scroll open menu
+		$('body').toggleClass('overflow_hidden');
+
+		
+	
 	});
     
 });
