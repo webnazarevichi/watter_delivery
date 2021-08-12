@@ -2,6 +2,9 @@
     position: relative;
     padding: 105px 0 135px 0;
     overflow: hidden;
+    &__wrapper{
+        position: relative;
+    }
     &__title {
         font-family: 'Marmelad', sans-serif;
         font-weight: normal;
@@ -56,23 +59,143 @@
     }
     &__img {
         position: absolute;
-        top: 35px;
-        right: 20px;
+        top: -50px;
+        right: -5%;
         max-width: 600px;
         z-index: -1;
     }
 }
-
-
-@media screen and(max-width: 575px) {
+@media screen and(max-width: 1200px){
     .product {
-        padding: 75% 0 75px 0;
         &__title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        &__subtitle {
             font-size: 34px;
+            line-height: 43px;
+            &::after{
+                width: 90px;
+                height: 90px;
+                top: -22px;
+            }
+        }
+        &__descr {
+            font-size: 21px;
+            max-width: 510px;
+            &_extention {
+                max-width: 990px;
+                margin-top: 20px;
+                font-size: 21px;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+        &__collapse{
+            display: none;
+        }
+        &__img {
+            position: absolute;
+            top: -50px;
+            right: -10%;
+            max-width: 550px;
+            z-index: -1;
+        }
+    }
+}
+@media screen and(max-width: 991px){
+    .product {
+        padding: 10px 0 75px 0;
+        &__wrapper{
+            position: relative;
+            padding-top: 595px;
+        }
+        &__title {
+            font-size: 47px;
+            text-align: center;
+            position: relative;
+        }
+        &__subtitle {
+            font-size: 37px;
+            text-align: center;
+            margin: 0 auto;
+            width: 210px;
+            &::after{
+                content: '';
+                background-image: url('../img/листик.png');
+                position: absolute;
+                width: 85px;
+                height: 85px;
+                top: -22px;
+                left: auto;
+                right: -8px;
+            }
+        }
+        &__descr {
+            font-size: 21px;
+            line-height: 165%;
+            color: #000000;
+            margin-top: 36px;
+            max-width: 100%;
+            &_extention {
+                display: block;
+                max-width: 100%;
+                font-size: 21px;
+                &_active{
+                    display: block;
+                }
+                &_mt_54{
+                    margin-top: 54px;
+                }
+            }
+        }
+        &__collapse{
+            display: none;
+        }
+        &__img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            display: block;
+            margin: 0 auto;
+            max-width: 600px;
+            
+            &_1{
+                transform: rotate(-15deg);
+            }
+            &_2{
+                transform: rotate(-17deg);
+            }
+            &_3{
+                transform: rotate(-16deg);
+            }
+            &_4{
+                transform: rotate(-21deg);
+            }
+            &_5{
+                transform: rotate(-20deg);
+            }
+            &_6{
+                transform: rotate(-17.5deg);
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .product {
+        padding: 10px 0 75px 0;
+        &__wrapper{
+            padding-top: 75%;
+        }
+        &__title {
+            font-size: 37px;
             text-align: center;
         }
         &__subtitle {
-            font-size: 27px;
+            font-size: 30px;
             text-align: center;
             margin: 0 auto;
             width: 210px;
@@ -88,15 +211,15 @@
             }
         }
         &__descr {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 165%;
             color: #000000;
             margin-top: 36px;
             max-width: 633px;
             &_extention {
                 display: none;
-                max-width: 1040px;
-                font-size: 18px;
+                max-width: 100%;
+                font-size: 20px;
                 &_active{
                     display: block;
                 }
@@ -121,12 +244,13 @@
         }
         &__img {
             position: absolute;
-            top: 15px;
+            top: 0;
             right: 0;
             left: 0;
             display: block;
             margin: 0 auto;
             max-width: 75%;
+            
             &_1{
                 transform: rotate(-15deg);
             }
@@ -144,6 +268,26 @@
             }
             &_6{
                 transform: rotate(-17.5deg);
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 575px) {
+    .product {
+        &__title {
+            font-size: 34px;
+        }
+        &__subtitle {
+            font-size: 27px;
+        }
+        &__descr {
+            font-size: 18px;
+            &_extention {
+                font-size: 18px;
+                &_active{
+                    display: block;
+                }
             }
         }
     }

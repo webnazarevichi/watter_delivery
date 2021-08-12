@@ -11,6 +11,8 @@ $(document).ready(function(){
     //Add class hamburger "active"
 	$('.hamburger').click(function(){
 		$('.hamburger').toggleClass('hamburger_active');
+		//No scroll open menu
+		$('body').toggleClass('overflow_hidden');
 	});
 
 	//Add class "active" text collapse

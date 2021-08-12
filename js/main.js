@@ -76,10 +76,7 @@ $(document).ready(function(){
 	$('.hamburger').click(function(){
 		$('.hamburger').toggleClass('hamburger_active');
 		//No scroll open menu
-		$('body').toggleClass('overflow_hidden');
-
-		
-	
+		$('body').toggleClass('overflow_hidden');	
 	});
     
 });

@@ -31,15 +31,15 @@
         <div class="container">
             <nav>
                 <div class="header__logo">
-                    <a href="#"><img src="icons/лого.png" alt="logo"></a>
+                    <a href="index.html"><img src="icons/лого.png" alt="logo"></a>
                 </div>
                 <div class="header__wrapper">
                     <div class="header__item">
                         <ul class="header__menu">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Доставка</a></li>
-                            <li><a href="#">Наш партнёр</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="index.html">Главная</a></li>
+                                <li><a href="work.html">Доставка</a></li>
+                                <li><a href="partner.html">Наш партнёр</a></li>
+                                <li><a href="#contact">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="header__item">
@@ -66,10 +66,10 @@
                     <div class="header__nav nav-js" data-active="false">
                         <div class="header__item_mobile">
                             <ul class="header__menu_mobile">
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">Доставка</a></li>
-                                <li><a href="#">Наш партнёр</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="work.html">Доставка</a></li>
+                                <li><a href="partner.html">Наш партнёр</a></li>
+                                <li><a href="#contact">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,30 +77,35 @@
             </nav>
         </div>
     </header>
-    <section class="work">
+    <section class="product">
         <div class="container">
-            <h1 class="work__title">График работы</h1>
-            <div class="work__descr">Мы работаем для Вас в городе ОДИНЦОВО и по всему ОДИНЦОВСКОМУ РАЙОНУ + Западный Округ Москвы. У нас есть большой плюс в сравнении со многими поставщиками воды: мы находимся в г. Одинцово и это сказывается на оперативности доставки воды.</div>
-            <div class="work__timing">Офис и склад в г.Одинцово работает пять дней в неделю с 6:00-18:00
+            <div class="product__wrapper">
+                <h1 class="product__title">Пилигрим</h1>
+                <h2 class="product__subtitle">345 р.-</h2>
+                <div class="product__descr">
+                    Талая ледниковая вода "Пилигрим" рождается в самых высоких генетически чистых ледниках Северного Кавказа. Высота, постоянные низкие температуры и высокая конденсация способствуют образованию в ледниках Карачаево-Черкесии легкого водорода. Талая ледниковая вода, обогащенная легким водородом, улучшает обмен веществ и является "живой" водой. Талая вода Архызского ледника, проходя через естественный фильтр - вулканические породы, приобретает кристальную чистоту и насыщается полезными микроэлементами.
+                    <span class="product__collapse"><button>подробнее...</button></span> 
+                </div>
+                <div class="product__descr_extention">
+                    Регулярное употребление талой ледниковой воды "Пилигрим" стимулирует выработку интерферона - защитного белка, а также способствует выработке гормона серотонина, который регулирует хорошее самочувствие, работоспособность и энергичность.
+                    <br><br>
+                    Минеральная вода "Пилигрим" не имеет противопоказаний, отвечает всем критериям Всемирной организации здравоохранения и рекомендована к ежедневному употреблению и применению для детского питания Государственным НИИ курортологии Минздрава РФ, г. Пятигорск. Почувствуйте натуральный вкус чая, кофе, любимых блюд и забудьте о накипи и осадке в чайнике.
+                    <br><br>
+                    По степени Минерализации и микробиологической чистоте природная вода "Пилигрим" относится к узкому кругу элитных питьевых вод мира. Высокое качество воды "Пилигрим" подтвердили эксперты лаборатории "Bodycote" (Великобритания), признанного мирового лидера в тестировании различных продуктов.
+                    <br><br>
+                    Питьевая вода "Пилигрим" является слабоминерализованной водой гидрокарбонатного натриево-кальциевого состава.
+                </div>
+                <img src="img/1.2.jpg" alt="Пилигрим" class="product__img product__img_3">
+                <button class="button button_product" onclick="document.location='index.html#catalog'">вернуться в каталог</button>
             </div>
-            <div class="work__weekend">Суббота и воскресенье выходные.</div>
-            <span class="work__phone"><a href="tel:89263616447" class="work__phone_link">8 (926) 361 64 47;</a><a href="tel:84956485259" class="work__phone_link">8 (495) 648 52 59</a></span>
-            <img class="work__img" src="icons/time.png" alt="time">
-            <div class="work__conditions">
-                Если заказ поступил до  12:00 - доставка произойдёт день в день. Заказы после 12 будут исполнены на следующий день или по договорённости.
-            </div>
-            <div class="work__minimum_order">
-                * Минимальный заказ - 3 бутылки, в связи с повышением спроса на наши услуги и невозможностью своевременной поставки.  
-            </div>
-            <button class="button button_product">вернуться в каталог</button>
         </div>
     </section>
-    <footer class="footer footer_product">
+    <footer id="contact" class="footer footer_product">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__info">
                     <div class="footer__logo">
-                        <a href="#"><img src="icons/лого.png" alt="logo"></a>
+                        <a href="index.html"><img src="icons/лого.png" alt="logo"></a>
                         <div class="footer__document">ИНН: 503509361263</div>
                     </div>
                 </div>

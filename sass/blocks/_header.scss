@@ -24,8 +24,8 @@
     }
     &__logo {
         width: 150px;
-        margin-top: 10px;
         z-index: 200;
+        margin-top: 10px;
         img {
             width: 100%;
         }
@@ -78,11 +78,27 @@
 
 @media screen and (max-width: 1200px){
     .header{
+
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            min-width: 110px;
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0 16px;
+                a {
+                    font-family: 'Arsenal', sans-serif;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                }
+            }
+        }
         &__card {
             margin-left: 0;
-        }
-        &__wrapper{
-            margin: 0;
         }
     }
 }
@@ -92,6 +108,7 @@
     .header{
         min-height: 60px;
         overflow: hidden;
+
         &__logo{
             margin-top: 0;
             order: 2;
@@ -101,6 +118,7 @@
             justify-content: space-between;
             align-items: center;
             order: 3;
+            margin-top: 0;
             &_hidden{
                 min-width: 50px;
                 display: block;

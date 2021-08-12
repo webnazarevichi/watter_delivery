@@ -64,7 +64,7 @@
             background: url('../img/помпа.png') center (center/cover) no-repeat;
         }
     }
-    &__decor {
+    &__wave {
         position: absolute;
         display: block;
         margin: 0 auto;
@@ -110,22 +110,6 @@
             margin-top: 25px;
             margin-left: 15px;
         }
-        &__img {
-            width: 503px;
-            height: 450px;
-            background: url('../img/бутыль.png') center (center/cover) no-repeat;
-            &_2 {
-                background: url('../img/помпа.png') center (center/cover) no-repeat;
-            }
-        }
-        &__decor {
-            margin: 0 auto;
-            height: 80px;
-            width: 100%;
-            right: 0;
-            left: 0;
-            bottom: -25px;
-        }
     }
 }
 
@@ -156,10 +140,6 @@
         &__img {
             width: 375px;
             height: 400px;
-            background: url('../img/бутыль.png') center (center/cover) no-repeat;
-            &_2 {
-                background: url('../img/помпа.png') center (center/cover) no-repeat;
-            }
         }
     }
 }
@@ -179,7 +159,7 @@
             text-align: center;
         }
         &__descr {
-            font-size: 13px;
+            font-size: 15px;
             line-height: 22px;
         }
         &__carousel {
@@ -231,11 +211,11 @@
             }
         }
         &__subheader {
-            font-size: 26px;
+            font-size: 27px;
             line-height: 36px;
         }
         &__descr {
-            font-size: 13px;
+            font-size: 15px;
             line-height: 22px;
             margin-top: 16px;
             margin-left: 0;

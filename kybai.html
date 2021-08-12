@@ -31,15 +31,15 @@
         <div class="container">
             <nav>
                 <div class="header__logo">
-                    <a href="#"><img src="icons/лого.png" alt="logo"></a>
+                    <a href="index.html"><img src="icons/лого.png" alt="logo"></a>
                 </div>
                 <div class="header__wrapper">
                     <div class="header__item">
                         <ul class="header__menu">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Доставка</a></li>
-                            <li><a href="#">Наш партнёр</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="work.html">Доставка</a></li>
+                            <li><a href="partner.html">Наш партнёр</a></li>
+                            <li><a href="#contact">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="header__item">
@@ -63,33 +63,43 @@
                             <span class="bar bar4"></span>
                         </div>
                     </button>
-                    <div class="header__nav nav-js" data-active="false"></div>
+                    <div class="header__nav nav-js" data-active="false">
+                        <div class="header__item_mobile">
+                            <ul class="header__menu_mobile">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="work.html">Доставка</a></li>
+                                <li><a href="partner.html">Наш партнёр</a></li>
+                                <li><a href="#contact">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>               
             </nav>
         </div>
     </header>
     <section class="product">
         <div class="container">
-            <h1 class="product__title">АРХЫЗИК</h1>
-            <h2 class="product__subtitle">400 р.-</h2>
-            <div class="product__descr">
-                Питьевая детская вода Архызик 19 л.<br>
-
-                1. Предназначена для детей с момента рождения (не требует кипячения)<br>
-                2. Прекрасно подходит для разведения сухих смесей и приготовления каш<br>
-                3. Идеальна для купания младенцев<br>
-                4. Рекомендована беременным женщинам<br>
+            <div class="product__wrapper">
+                <h1 class="product__title">КУБАЙ</h1>
+                <h2 class="product__subtitle">330 р.-</h2>
+                <div class="product__descr">
+                    Уникальна по своим свойствам талая ледниковая вода «Кубай»: помимо обеспечения организма необходимыми микроэлементами, она оказывает целебное и благотворное влияние на здоровье человека в целом. Миллионы лет назад, когда таяли ледники, природа имела первозданную чистоту, поэтому талая вода «Кубай» приобрела уникальную структуру, схожую со структурой здоровой клетки человека. Организм распознает и усваивает талую ледниковую воду «Кубай» гораздо лучше, чем обычную.
+                    <span class="product__collapse"><button>подробнее...</button></span>  
+                </div>
+                <div class="product__descr_extention">
+                    За счет этого талая ледниковая вода «Кубай» способствует улучшению самочувствия, помогает меньше болеть и позволяет вести активный образ жизни. Упаковка воды «Кубай», созданная по современным технологиям, сохраняет ее кристальную чистоту и уникальные полезные свойства.
+                </div>
+                <img src="img/1.1.jpg" alt="Кубай" class="product__img product__img_2">
+                <button class="button button_product" onclick="document.location='index.html#catalog'">вернуться в каталог</button>
             </div>
-            <img src="img/1.6.jpg" alt="АРХЫЗИК" class="product__img product__img_6">
-            <button class="button button_product">вернуться в каталог</button>
         </div>
     </section>
-    <footer class="footer footer_product">
+    <footer id="contact" class="footer footer_product">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__info">
                     <div class="footer__logo">
-                        <a href="#"><img src="icons/лого.png" alt="logo"></a>
+                        <a href="index.html"><img src="icons/лого.png" alt="logo"></a>
                         <div class="footer__document">ИНН: 503509361263</div>
                     </div>
                 </div>

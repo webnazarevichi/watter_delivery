@@ -4,7 +4,7 @@
 
 var canvas = document.querySelector('canvas');
     canvas.width = document.body.clientWidth;
-    // canvas.width = document.body.clientWidth;
+    canvas.width = document.body.clientWidth;
     // canvas.height = document.body.clientHeight;
     canvas.height = 575;
 var ctx = canvas.getContext('2d');
