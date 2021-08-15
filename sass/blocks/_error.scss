@@ -1,9 +1,15 @@
 .error{
     position: relative;
     background: #00AFE9;
-    min-height:400px;
+    min-height:80vh;
     overflow: hidden;
     padding: 60px 0;
+    &__center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
     &__wrapper{
         display: block;
         margin: 0 auto;
@@ -19,6 +25,7 @@
         font-family: 'Marmelad', sans-serif;
         color: white;
         font-size: 40px;
+        margin-top: 30px;
     } 
     &__btn{
         position: relative;
@@ -121,4 +128,66 @@
         0% {margin-left: 1000px;}
         100% {margin-left: -1000px;}
     } 
+}
+
+
+@media screen and (max-width: 991px) {
+    .error {
+        &__center{
+            min-height: 85vh;
+        }
+        &__title{
+            text-align: center;
+            font-family: 'Marmelad', sans-serif;
+            color: white;
+            font-size: 190px;
+        } 
+        &__subtitle{
+            text-align: center;
+            font-family: 'Marmelad', sans-serif;
+            color: white;
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .error {
+        &__center{
+            min-height: 80vh;
+        }
+        &__title{
+            text-align: center;
+            font-family: 'Marmelad', sans-serif;
+            color: white;
+            font-size: 170px;
+        } 
+        &__subtitle{
+            text-align: center;
+            font-family: 'Marmelad', sans-serif;
+            color: white;
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .error {
+        &__center{
+            min-height: 70vh;
+        }
+        &__title{
+            text-align: center;
+            font-family: 'Marmelad', sans-serif;
+            color: white;
+            font-size: 140px;
+        } 
+        &__subtitle{
+            text-align: center;
+            font-family: 'Marmelad', sans-serif;
+            color: white;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    }
 }

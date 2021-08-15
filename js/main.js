@@ -240,21 +240,21 @@ $(function(){
 		orderPreview = '<p class="jqcart-cart-title">Корзина</p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div>ID</div><div></div><div>Наименование</div><div>Цена</div><div>Кол-во</div><div>Сумма</div><div></div></div>';
 		var key, sum = 0;
 		for (key in cartData) {
-		  if (cartData.hasOwnProperty(key)) {
-					  sum = Math.ceil((cartData[key].count * cartData[key].price) * 100) / 100;
-					  subtotal = Math.ceil((subtotal + sum) * 100) / 100;
-					  
-			orderPreview += '<div class="jqcart-tr" data-id="' + cartData[key].id + '">';
-					  orderPreview += '<div class="jqcart-small-td">' + cartData[key].id + '</div>';
-					  orderPreview += '<div class="jqcart-small-td jqcart-item-img"><img src="' + cartData[key].img + '" alt=""></div>';
-			orderPreview += '<div>' + cartData[key].title + '</div>';
-			orderPreview += '<div class="jqcart-price">' + cartData[key].price + '</div>';
-			orderPreview += '<div><span class="jqcart-incr" data-incr="-1">&#8211;</span><input type="text" class="jqcart-amount" value="' + cartData[key].count + '"><span class="jqcart-incr" data-incr="1">+</span></div>';
-			orderPreview += '<div class="jqcart-sum">' + sum + ' ' + opts.currency + '</div>';
-					  orderPreview += '<div class="jqcart-small-td"><span class="jqcart-del-item"></span></div>';
-			orderPreview += '</div>';
+			if (cartData.hasOwnProperty(key)) {
+						sum = Math.ceil((cartData[key].count * cartData[key].price) * 100) / 100;
+						subtotal = Math.ceil((subtotal + sum) * 100) / 100;
+						
+			  orderPreview += '<div class="jqcart-tr" data-id="' + cartData[key].id + '">';
+						orderPreview += '<div class="jqcart-small-td">' + cartData[key].id + '</div>';
+						orderPreview += '<div class="jqcart-small-td jqcart-item-img"><img src="' + cartData[key].img + '" alt=""></div>';
+			  orderPreview += '<div class="jqcart-wrapper"><div>' + cartData[key].title + '</div>';
+			  orderPreview += '<div class="jqcart-price">' + cartData[key].price + '</div>';
+			  orderPreview += '<div><span class="jqcart-incr" data-incr="-1">&#8211;</span><input type="text" class="jqcart-amount" value="' + cartData[key].count + '"><span class="jqcart-incr" data-incr="1">+</span></div></div>';
+			  orderPreview += '<div class="jqcart-small-td jqcart-sum">' + sum + ' ' + opts.currency + '</div>';
+						orderPreview += '<div class="jqcart-small-td"><span class="jqcart-del-item"></span></div>';
+			  orderPreview += '</div>';
+			}
 		  }
-		}
 		orderPreview += '</div></div>';
 		orderPreview += '<div class="jqcart-subtotal">Итого: <strong>' + subtotal + '</strong> ' + opts.currency + '</div>';
 			  

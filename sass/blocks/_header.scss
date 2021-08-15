@@ -127,7 +127,11 @@
         }
         &__item{
             &_mobile{
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
             }
         }
         &__menu, &__phone {
@@ -136,15 +140,11 @@
         }
         &__menu{
             &_mobile{
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
                 display: flex;
                 flex-direction: column;
-                margin: 0 auto;
+                margin-top: 0;
                 li{
-                    margin-top: 30px;
+                    margin-top: 14px;
                 }
                 a {
                     font-family: 'Arsenal', sans-serif;
@@ -153,8 +153,44 @@
                     font-size: 24px;
                     line-height: 34px;
                     color: #FFFFFF;
-                    text-align: center;
+                    text-align: center;                    
                 }  
+            }
+        }
+        &__phone{
+            &_mobile{
+                display: flex;
+                flex-direction: column;
+                margin-top: 60px;
+                a {
+                    font-family: 'Arsenal', sans-serif;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    margin-top: 10px;
+                }
+            }
+        }
+        &__work{
+            font-family: 'Marmelad, sans-serif';
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 27px;
+            color: #FFFFFF;
+            position: relative;
+            margin-top: 20px;
+            padding-left: 25px;
+            &::before{
+                content: '';
+                background: url('../icons/clock.png');
+                background-size: cover;
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                top: 21px;
+                left: 0;
+
             }
         }
     }
@@ -254,7 +290,7 @@
       }
     .header__nav {
         display: block;
-        background-color: rgba(0, 144, 192, .98);
+        background-color: #02C0FF;
         position: fixed;
         overflow: hidden;
         z-index: 100;
@@ -293,5 +329,9 @@
 
 
 @media screen and(max-width: 575px){
-
+    .header{
+        &__logo {
+            width: 120px;
+        }
+    }
 }
