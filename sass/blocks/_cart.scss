@@ -224,7 +224,6 @@ vertical-align: text-bottom;
 .jqcart-orderform p {
   display: block;
   position: relative;
-  width: 100%;
 }
 .jqcart-orderform label {
   position: absolute;
@@ -397,6 +396,9 @@ vertical-align: text-bottom;
     font-size: 15px;
   }
 
+  .jqcart-orderform p {
+    width: 100%;
+  }
   .jqcart-orderform p input[type="text"],
   .jqcart-orderform p input[type="number"],
   .jqcart-orderform p input[type="email"],
@@ -414,4 +416,8 @@ vertical-align: text-bottom;
         outline: none;
     }
   }
+  .jqcart-orderform p {
+  display: block;
+  position: relative;
+}
 }
